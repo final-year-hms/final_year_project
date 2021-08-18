@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%=title%></title>
+    <link rel="stylesheet" href="/css/drinfo.css"> </head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <a class="logo-text" href="/home"> HOME</a>
+            </div>
+            <div class="login ">
+                <a class="logout" href="/">Log out</a>
+            </div>
+        </div>
+        <div class="main-class">
+            <div class="left">
+                <div>
+                    <img class="image" src="/images/nextpage4.JPG" width="320px" height="340px">
+                </div>
+            </div>
+            <div class="right">
+                <h1 class="information-tab">
+                    <h3><%=patient.name%></h3>
+                    <h4><%=patient.id%></h4>
+                    <h4><%=patient.details%></h4>
+                </h1>
+            </div>
+        </div>
+        <div class="down-left">
+            <button type="button " class="edit-btn ">EDIT</button>
+
+        </div>
+</body>
+</html>

@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Elsie';
+    background-image: url(../img/backgroundhome.jpg)
+}
+
+.header {
+    width: 100%;
+    background-color: rgba(180, 178, 178, 0.822);
+    height: 60px;
+}
+
+.logo {
+    width: 50%;
+    padding-top: 15px;
+    float: left;
+}
+
+.login {
+    width: 50%;
+    height: 20%;
+    float: left;
+    padding-top: 15px;
+}
+
+.logo-text {
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+    margin-left: 46px;
+}
+
+.logout {
+    font-size: 30px;
+    margin-left: 500px;
+    text-decoration: none;
+    color: black;
+}
+
+.left {
+    width: 30%;
+    height: 430px;
+    float: left;
+}
+
+.right {
+    width: 70%;
+    height: 430px;
+    float: left;
+}
+
+.down-left {
+    width: 30%;
+    height: 130px;
+    float: left;
+}
+
+.down-right {
+    width: 70%;
+    height: 130px;
+    float: left;
+}
+
+.image {
+    padding-left: 60px;
+    padding-top: 100px;
+}
+
+.edit-btn {
+    background-color: rgb(24, 183, 211);
+    padding: 15px 50px;
+    border: 0 none;
+    cursor: pointer;
+    border-radius: 15px;
+    font-size: x-large;
+    font-family: 'Elsie';
+    margin-left: 130px;
+    margin-top: 30px;
+}
+
+.delete-btn {
+    background-color: rgb(24, 183, 211);
+    padding: 15px 50px;
+    border: 0 none;
+    cursor: pointer;
+    border-radius: 15px;
+    font-size: x-large;
+    font-family: 'Elsie';
+    margin-left: 600px;
+    margin-top: 30px;
+}
+
+.information-tab {
+    padding-left: 200px;
+    padding-top: 200px;
+}

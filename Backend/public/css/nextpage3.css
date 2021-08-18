@@ -1,0 +1,85 @@
+               body {
+                   margin: 0;
+                   padding: 0;
+                   font-family: 'Elsie';
+                   background-image: url(../img/backgroundhome.jpg)
+               }
+               
+               .header {
+                   width: 100%;
+                   background-color: rgba(180, 178, 178, 0.822);
+                   height: 60px;
+               }
+               
+               .logo {
+                   width: 50%;
+                   padding-top: 15px;
+                   float: left;
+               }
+               
+               .login {
+                   width: 50%;
+                   height: 20%;
+                   float: left;
+                   padding-top: 15px;
+               }
+               
+               .logo-text {
+                   font-size: 30px;
+                   text-decoration: none;
+                   color: black;
+                   margin-left: 46px;
+               }
+               
+               .logout {
+                   font-size: 30px;
+                   margin-left: 500px;
+                   text-decoration: none;
+                   color: black;
+               }
+               
+               .left-side {
+                   width: 50%;
+                   height: 300px;
+                   float: left;
+                   padding-top: 90px;
+               }
+               
+               .right-side {
+                   width: 50%;
+                   height: 550px;
+                   float: left;
+               }
+               
+               .home-page-fit {
+                   width: 640px;
+                   height: 550px;
+               }
+               
+               .first-box {
+                   width: 300px;
+                   height: 40px;
+                   padding-left: 80px;
+                   margin-left: 70px;
+               }
+               
+               .consult-btn {
+                   background-color: rgb(24, 183, 211);
+                   padding: 15px 20px;
+                   border: 0 none;
+                   cursor: pointer;
+                   border-radius: 15px;
+                   font-size: 25px;
+                   font-family: 'Elsie';
+                   margin-left: 240px;
+                   margin-top: 60px;
+                   padding-left: 36px;
+               }
+               
+               .consult-btn:hover {
+                   background-color: hsl(189, 61%, 40%);
+               }
+               
+               .names {
+                   padding-left: 50px;
+               }

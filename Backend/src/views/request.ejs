@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%=title%></title>
+    <link rel="stylesheet" href="/css/request.css"> </head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <%for(i=0;i<nav.length;i++){%>
+            <div class="logo">
+                <a href="<%=nav[i].link%>" class="logo-text"><%=nav[i].name%></a>
+            </div>
+            <%}%>
+        </div>
+        
+        <div class="main-class">
+            <form action="/request" method="GET">
+                <div class="center">
+                    <div>
+                                <span class="id">
+                                    ID:
+                                </span>
+                                    <input type=<%=patient%> class="input-box" name="id" value=<%=userid%>>
+                                    <span <%=doctor%>><%=userid%></span>
+
+                                    
+                    </div>
+                </div>
+                <div class="center-right">
+                    <input type="submit" class="req-btn">
+                </div>
+                <p><%=msg%></p>
+            </form>
+            </div>
+            <div class="down-right">
+                <img src="/images/nextpage2.JPG" width="350px">
+
+            </div>
+            <div>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <td>Patient id</td>
+                            <td>Temp</td>
+                            <td>BPM</td>
+                            <td>SPO2</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% data.forEach(row=>{ %>
+                            <tr>
+                                <td>
+                                     <%=row.patient_id%> 
+                                </td>
+                                <td>
+                                    <%=row.temp%>
+                                </td>
+                                <td>
+                                    <%=row.bpm%>
+                                </td>
+                                <td>
+                                    <%=row.spo2%>
+                                </td>
+                            </tr>
+                        <%})%>
+                    </tbody>
+
+                </table>
+            </div>
+        </div>
+        
+</body>
+
+</html>

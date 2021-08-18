@@ -1,0 +1,76 @@
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Elsie';
+        background-image: url(../img/backgroundhome.jpg)
+    }
+    
+    .header {
+        width: 100%;
+        background-color: rgba(180, 178, 178, 0.822);
+        height: 60px;
+    }
+    
+    .logo {
+        width: 50%;
+        padding-top: 15px;
+        float: left;
+    }
+    
+    .login {
+        width: 50%;
+        height: 20%;
+        float: left;
+        padding-top: 15px;
+    }
+    
+    .logo-text {
+        font-size: 30px;
+        text-decoration: none;
+        color: black;
+        margin-left: 46px;
+    }
+    
+    .logout {
+        font-size: 30px;
+        margin-left: 500px;
+        text-decoration: none;
+        color: black;
+    }
+    
+    .center {
+        width: 100%;
+        height: 500px;
+    }
+    
+    .down {
+        width: 100%;
+        height: 60px;
+        float: left;
+    }
+    
+    .input {
+        width: 800px;
+        height: 25px;
+        background-color: darkgray;
+    }
+    
+    .align {
+        margin-left: 150px;
+    }
+    
+    .send {
+        background-color: rgb(24, 183, 211);
+        padding: 10px 20px;
+        border: 0 none;
+        cursor: pointer;
+        border-radius: 15px;
+        font-size: 18px;
+        margin-left: 40px;
+        font-family: 'Elsie';
+        font-size: 20px;
+    }
+    
+    .send:hover {
+        background-color: hsl(189, 61%, 40%);
+    }

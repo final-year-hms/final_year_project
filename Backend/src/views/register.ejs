@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%=title%></title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+            </div>
+            <div class="login ">
+                <a href="/log">Login</a>
+            </div>
+        </div>
+        <div class="left-side">
+            <img class="align-pic" src="/images/home.JPG" width="600px">
+        </div>
+
+        <div class="right-side">
+            <div id="error"></div>
+            <form id="form" action='/signup/register' method="POST">
+                <table class="font-changer">
+                    <tr>
+                        <td>
+                           Name
+                        </td>
+                        <td>
+                            <input type="Full Name" id="name" name="name" class="input-box">
+                        </td>
+                    </tr>
+                    <!-- <tr>
+                        <td>
+                            Date of Birth
+                        </td>
+                        <td>
+                            <input type="date" id="dob" name="dob" class="input-box">
+                        </td>
+                    </tr> -->
+                    <tr>
+                        <td>
+                            Phone Number
+                        </td>
+                        <td>
+                            <input type="number" id="phn" name="phn" class="input-box" size="10">
+                        </td>
+                    </tr>
+                    <td>
+                        Email
+                    </td>
+                    <td>
+                        <input type="email" id="email" name="email" class="input-box">
+                    </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Registration Id
+                        </td>
+                        <td>
+                            <input type="text" id="id" name="id" class="input-box">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Password
+                        </td>
+                        <td>
+                            <input type="password" id="pwd" name="pwd" class="input-box">
+                            <p class="Strength" id="length"></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Confirm Password
+                        </td>
+                        <td>
+                            <input type="password" id="conp" name="conp" class="input-box">
+                            <p class="Strength" id="length"></p>
+                        </td>
+                    </tr>
+
+                </table>
+
+                <input type="submit" value="Sign up" class="signup-btn">
+
+            </form>
+        </div>
+        <script>
+            function validate(event) {
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                // const dob = document.getElementById('dob').value;
+                // const dept = document.getElementById('dept').value;
+                // const dradio = document.getElementById('radiodoc');
+                // const pradio = document.getElementById('radiopat');
+                const phn = document.getElementById('phn').value;
+                const pwd = document.getElementById('pwd').value;
+                const conp = document.getElementById('conp').value
+                const error = document.getElementById('error');
+                var filter = /^[-!#$%&'*+\/0-9=?A-Z^_a-z`{|}~](\.?[-!#$%&'*+\/0-9=?A-Z^_a-z`{|}~])*@[a-zA-Z0-9](-*\.?[a-zA-Z0-9])*\.[a-zA-Z](-?[a-zA-Z0-9])+$/;
+                var phone = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
+                let text;
+
+                if (name == "") {
+                    text = "Fill the name field";
+                    error.innerHTML = text;
+                    error.style.padding = "8px";
+                    return false;
+                }
+                if (name.length < 3) {
+                    text = "Name should have atleast 3 characters";
+                    error.innerHTML = text;
+                    error.style.padding = "8px";
+                    return false;
+                }
+                if (email == "") {
+                    text = "Fill the email field";
+                    error.innerHTML = text;
+                    error.style.padding = "8px";
+                    return false;
+                }
+                if (email.search(filter) == -1) {
+                    text = "Enter a valid email-id";
+                    error.innerHTML = text;
+                    error.style.padding = "8px";
+                    return false;
+                }
+                // if (dob == "") {
+                //     text = "Enter Date of Birth";
+                //     error.innerHTML = text;
+                //     error.style.padding = "8px";
+                //     return false;
+                // }
+                // if (dradio.checked) {
+                //     //doctor's radio butto is checked
+                //     console.log("checked");
+                // } else if (pradio.checked) {
+                //     console.log("checked");
+                // } else {
+                //     text = "A radio button should be selected";
+                //     error.innerHTML = text;
+                //     error.style.padding = "8px";
+                //     return false;
+                // }
+                if (pwd == "" || pwd.length < 8) {
+                    text = "Password must be atleast 8 characters long";
+                    error.innerHTML = text;
+                    error.style.padding = "8px";
+                    return false;
+                }
+                console.log(pass.search(/[A-Z]/))
+                console.log(pass.search(/[a-z]/))
+                console.log(pass.search(/[0-9]/))
+                if (pass.search(/[A-Z]/) == -1) {
+                    text = "Password must contain atleast one uppercase letter";
+                    error.innerHTML = text;
+                    error.style.padding = "8px";
+                    return false;
+                }
+                if (pass.search(/[a-z]/) == -1) {
+                    text = "Password must contain atleast one lowercase letter";
+                    error.innerHTML = text;
+                    error.style.padding = "8px";
+                    return false;
+                }
+                if (pass.search(/[0-9]/) == -1) {
+                    text = "Password must contain atleast one number";
+                    error.innerHTML = text;
+                    error.style.padding = "8px";
+                    return false;
+                }
+                if (conp == "") {
+                    text = "Please confirm the password";
+                    error.innerHTML = text;
+                    error.style.padding = "8px";
+                    return false;
+                }
+                if (pwd != conp) {
+                    text = "Passwords did not match";
+                    error.innerHTML = text;
+                    error.style.padding = "8px";
+                    return false;
+                }
+                if (number.search(phone) == -1) {
+                    text = "Enter a valid phone number";
+                    error.innerHTML = text;
+                    error.style.padding = "8px";
+                    return false;
+                }
+            }
+        </script>
+        <script>
+            pwd.addEventListener('keyup', function() {
+
+                Strength();
+            });
+
+            function Strength() {
+                var val = document.getElementById('pwd').value;
+                var status = document.getElementById('length');
+                var count = 0;
+                if (val != "") {
+                    if (val.length <= 5)
+                        count = 1;
+                    if (val.length > 5 && val.length <= 8)
+                        count = 2;
+                    if (val.length > 8 && val.length <= 12)
+                        count = 3;
+
+                    if (count == 1) {
+                        status.innerHTML = "poor";
+                        status.style.background = "#D01110";
+                        status.style.color = "white";
+                        status.style.width = "50%";
+                        status.style.textAlign = "center";
+                        status.style.borderRadius = "5px";
+                        status.style.margin = "0 22.5%";
+                        status.style.padding = "4px";
+                    }
+                    if (count == 2) {
+                        status.innerHTML = "medium";
+                        status.style.background = "orange";
+                        status.style.color = "white";
+                        status.style.width = "50%";
+                        status.style.textAlign = "center";
+                        status.style.borderRadius = "5px";
+                        status.style.margin = "0 10px";
+                        status.style.padding = "4px";
+                    }
+                    if (count == 3) {
+                        status.innerHTML = "good";
+                        status.style.background = "green";
+                        status.style.color = "white";
+                        status.style.width = "50%";
+                        status.style.textAlign = "center";
+                        status.style.borderRadius = "5px";
+                        status.style.margin = "0 10px";
+                        status.style.padding = "4px";
+                    }
+                }
+            }
+        </script>
+</body>
+
+</html>

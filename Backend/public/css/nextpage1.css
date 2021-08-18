@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Elsie';
+    background-image: url(../img/backgroundhome.jpg)
+}
+
+.header {
+    width: 100%;
+    background-color: rgba(180, 178, 178, 0.822);
+    height: 60px;
+}
+
+.logo {
+    width: 50%;
+    padding-top: 15px;
+    float: left;
+}
+
+.login {
+    width: 50%;
+    height: 20%;
+    float: left;
+    padding-top: 15px;
+}
+
+.logo-text {
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+    margin-left: 46px;
+}
+
+.logout {
+    font-size: 30px;
+    margin-left: 500px;
+    text-decoration: none;
+    color: black;
+}
+
+.left-section {
+    width: 30%;
+    height: 470px;
+    padding-top: 100px;
+    float: left;
+}
+
+.pic1 {
+    padding-left: 33px;
+    padding-top: 20px;
+}
+
+.pic2 {
+    padding-top: 100px;
+    padding-left: 33px;
+}
+
+.center-section {
+    width: 46%;
+    height: 470px;
+    padding-left: 50px;
+    padding-top: 100px;
+    float: left;
+}
+
+.right-section {
+    width: 20%;
+    height: 470px;
+    padding-top: 50px;
+    float: left;
+}
+
+.firstline {
+    font-size: 20px;
+    padding-left: 50px;
+}
+
+.secondline {
+    font-size: 20px;
+    padding-top: 120px;
+    padding-left: 50px;
+}
+
+.data1 {
+    padding-left: 90px;
+}
+
+.data2 {
+    padding-left: 90px;
+}
+
+.req-btn {
+    background-color: rgb(24, 183, 211);
+    padding: 15px 50px;
+    border: 0 none;
+    cursor: pointer;
+    border-radius: 15px;
+    font-size: x-large;
+    font-family: 'Elsie';
+    margin-left: 40px;
+    margin-top: 70px;
+}
+
+.req-btn:hover {
+    background-color: hsl(189, 61%, 40%);
+}
+
+.req-btn1 {
+    background-color: rgb(24, 183, 211);
+    padding: 15px 50px;
+    border: 0 none;
+    cursor: pointer;
+    border-radius: 15px;
+    font-size: x-large;
+    font-family: 'Elsie';
+    margin-left: 40px;
+    margin-top: 200px;
+}
+
+.req-btn1:hover {
+    background-color: hsl(189, 61%, 40%);
+}

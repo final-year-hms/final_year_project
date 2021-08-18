@@ -1,0 +1,98 @@
+           body {
+               margin: 0;
+               padding: 0;
+               font-family: 'Elsie';
+               background-image: url(../img/backgroundhome.jpg)
+           }
+           
+           .header {
+               width: 100%;
+               background-color: rgba(180, 178, 178, 0.822);
+               height: 60px;
+           }
+           
+           .logo {
+               width: 50%;
+               padding-top: 15px;
+               float: left;
+           }
+           
+           .login {
+               width: 50%;
+               height: 20%;
+               float: left;
+               padding-top: 15px;
+           }
+           
+           .logo-text {
+               font-size: 30px;
+               text-decoration: none;
+               color: black;
+               margin-left: 46px;
+           }
+           
+           .logout {
+               font-size: 30px;
+               margin-left: 500px;
+               text-decoration: none;
+               color: black;
+           }
+           
+           .center {
+               width: 60%;
+               height: 160px;
+               float: left;
+           }
+           
+           .center-right {
+               width: 40%;
+               height: 160px;
+               float: left;
+           }
+           
+           .down {
+               width: 70%;
+               height: 400px;
+               float: left;
+           }
+           
+           .down-content {
+               padding-left: 300px;
+               padding-top: 100px;
+           }
+           
+           .down-right {
+               width: 30%;
+               height: 400px;
+               float: left;
+           }
+           
+           .input-box {
+               width: 500px;
+               height: 40px;
+               margin-top: 50px;
+               background-color: darkgray;
+           }
+           
+           .id {
+               padding-left: 200px;
+               font-family: 'Elsie';
+               font-size: 24px;
+               padding-top: 55px;
+           }
+           
+           .req-btn {
+               background-color: rgb(24, 183, 211);
+               padding: 15px 50px;
+               border: 0 none;
+               cursor: pointer;
+               border-radius: 15px;
+               font-size: x-large;
+               font-family: 'Elsie';
+               margin-left: 50px;
+               margin-top: 45px;
+           }
+           
+           .req-btn:hover {
+               background-color: hsl(189, 61%, 40%);
+           }

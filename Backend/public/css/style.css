@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Elsie';
+    background-image: url(../img/backgroundhome.jpg)
+}
+
+.header {
+    width: 100%;
+    background-color: rgba(180, 178, 178, 0.822);
+    height: 60px;
+}
+
+.logo {
+    width: 50%;
+    padding-top: 15px;
+    float: left;
+}
+
+.login {
+    width: 50%;
+    height: 20%;
+    float: left;
+    padding-top: 15px;
+}
+
+.logo-text {
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+    margin-left: 46px;
+}
+
+.logout {
+    font-size: 30px;
+    margin-left: 500px;
+    text-decoration: none;
+    color: black;
+}
+
+.left-side {
+    width: 50%;
+    height: 570px;
+    float: left;
+}
+
+.right-side {
+    width: 50%;
+    height: 570px;
+    float: left;
+}
+
+.input-radio {
+    margin-left: 50px;
+    padding-left: 100px;
+}
+
+.align-pic {
+    margin-left: 30px;
+}
+
+.font-changer {
+    font-family: 'Elsie';
+    font-size: 18px;
+}
+
+.input-box {
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px 0;
+    width: 400px;
+    border: 1px solid #999;
+    outline: none;
+}
+
+button {
+    color: rgb(0, 0, 0);
+    width: 100px;
+    padding: 10;
+    border-radius: 20px;
+    font-size: large;
+    margin: 10px 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.signup-btn {
+    background-color: rgb(24, 183, 211);
+    padding: 10px 30px;
+    border: 0 none;
+    cursor: pointer;
+    border-radius: 15px;
+    font-size: 25px;
+    font-family: 'Elsie';
+    margin-left: 280px;
+}
+
+.input-radio {
+    width: 20px;
+    height: 20px;
+    border: mediumaquamarine;
+    border-radius: 50%;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.change-font {
+    font-size: 17px;
+    font-family: 'Elsie';
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.home-page-fit {
+    position: absolute;
+    left: 300px;
+    top: 0px;
+    height: 100%;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#error{
+    text-align: center;
+    padding-bottom: 2%;
+    color:#eb0808;
+    font-weight:600;
+}
